@@ -1,0 +1,53 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Build outputs (Python, Arduino, ESP32 / PlatformIO)
+build/
+dist/
+.pio/
+*.o
+*.a
+*.elf
+*.hex
+*.bin
+*.map
+
+# Generated UI smoke-test screenshots
+/Cluster_UI/preview.png
+/Cluster_UI/preview-*.png
+
+# Local secrets and environment settings
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.aws/
+secrets.h
+
+# Editor and operating-system files
+.idea/
+.vs/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
