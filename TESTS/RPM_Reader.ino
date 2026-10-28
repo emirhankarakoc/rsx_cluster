@@ -1,5 +1,5 @@
 //sadece rpm okur
-//b14(input) - 24k - 24k - arduino input - 24k - ground(b18)
+//b14(input) - 24k - 24k - arduino DIGITAL input - 24k - ground(b18)
 const byte RPM_PIN = 2;
 
 volatile unsigned long pulses = 0;
