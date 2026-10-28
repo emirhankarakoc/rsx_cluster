@@ -1,4 +1,4 @@
-// sadece hizi okur
+// sadece hizi okur - b15ten
 // input - paralel olarak 2 tane 24k veya tek 12k - arduino input - gnd
 const byte VSS_PIN = 2;
 
