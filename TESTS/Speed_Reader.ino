@@ -1,5 +1,5 @@
 // sadece hizi okur - b15ten
-// input - paralel olarak 2 tane 24k veya tek 12k - arduino input - gnd
+// b15(input) - paralel olarak 2 tane 24k veya tek 12k - arduino input - gnd(b18)
 const byte VSS_PIN = 2;
 
 const float PULSES_PER_MILE = 4000.0;
