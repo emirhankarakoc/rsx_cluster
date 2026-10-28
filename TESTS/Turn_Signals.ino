@@ -1,6 +1,6 @@
-//12v comes from a7 - left signal.
-//12v comes from b9 - right signal
-//cluster input - 24k - 24k - arduino input -24k -gnd
+//12v, a7 - left signal.
+//12v, b9 - right signal
+//a7 veya b9 - 24k - 24k - arduino input -24k -gnd(b18)
 
 const byte LEFT_PIN = 2;
 
