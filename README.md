@@ -1,4 +1,12 @@
 # RSX Cluster
+sadece rpm , speed , left turn signal , right turn signal , cruise control light and cel light is on.
+screen is on shipping , capacitors is on shipping , k-line transceiver is on shipping. 
+future obd2 features:
+engine coolant temp
+intake air temp
+fuel usage , xx mpg
+will read from obd2 port (hopefully).
+29 october.
 
 ## Çalıştırma
 
