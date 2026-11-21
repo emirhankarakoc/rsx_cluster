@@ -3,7 +3,7 @@
 
 Custom digital instrument cluster project using Arduino, C++ and Python/Qt.
 
-Reading signals directly from the OEM cluster wiring.
+Reading signals directly from the original cluster harness.
 
 ## Signals & Pins
 
@@ -16,7 +16,7 @@ Reading signals directly from the OEM cluster wiring.
 | Right Turn Signal | B9 |
 | Cruise Control | A8 |
 
-Arduino reads the signals and sends data over USB serial (115200 baud). You also can see wiring diagram for 2002 rsx in files. I added as pdf files.
+Arduino reads the signals and sends data over USB serial port (115200 baud). You also can see wiring diagram for 2002 rsx in files. I added as pdf files.
 
 ## Dashboard UI
 
