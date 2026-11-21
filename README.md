@@ -16,7 +16,7 @@ Reading signals directly from the OEM cluster wiring.
 | Right Turn Signal | B9 |
 | Cruise Control | A8 |
 
-Arduino reads the signals and sends data over USB serial (115200 baud).
+Arduino reads the signals and sends data over USB serial (115200 baud). You also can see wiring diagram for 2002 rsx in files. I added as pdf files.
 
 ## Dashboard UI
 
@@ -43,5 +43,6 @@ The UI supports demo mode without connecting hardware.
 - Read ECT, IAT, STFT and LTFT from ECU
 - Integrate the 5-inch display
 - Build a standalone digital cluster
+- THEN HEAD UNIT ->>THEN ECU.
 
-**Status:** Work in progress.
+**Status:** Work in progress: im having problems with soldering on protoboard. We are using voltage divider and each input brings 5 things , so breadbord becomes a hell. I need a protoboard for keep this project organized...but having problems on soldering. (20 nov)
