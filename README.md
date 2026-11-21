@@ -1,49 +1,47 @@
-# RSX Cluster
-sadece rpm , speed , left turn signal , right turn signal , cruise control light and cel light is on.
-screen is on shipping , capacitors is on shipping , k-line transceiver is on shipping. 
-future obd2 features:
-engine coolant temp
-intake air temp
-fuel usage , xx mpg
-will read from obd2 port (hopefully).
-29 october.
 
-screen is arrived , having problems on soldering on protoboard->20november
+# 2002 Acura RSX — Digital Cluster
 
-## Çalıştırma
+Custom digital instrument cluster project using Arduino, C++ and Python/Qt.
 
-1. Bilgisayarına **Python 3.11 veya üzerini** kur. Windows'ta kurarken **Add Python to PATH** seçeneğini işaretle.
-2. GitHub'dan **Code → Download ZIP** ile indirip ZIP'i çıkart.
-3. Çıkarttığın klasörde terminal aç ve aşağıdaki komutları çalıştır.
+Reading signals directly from the OEM cluster wiring.
 
-### Windows (PowerShell)
+## Signals & Pins
 
-```powershell
+| Signal | RSX Cluster Pin |
+|---|---|
+| RPM | B14 |
+| Speed (VSS) | B15 |
+| Check Engine Light (CEL) | A22 |
+| Left Turn Signal | A7 |
+| Right Turn Signal | B9 |
+| Cruise Control | A8 |
+
+Arduino reads the signals and sends data over USB serial (115200 baud).
+
+## Dashboard UI
+
+The digital dashboard is located in [`Cluster_UI/`](Cluster_UI/).
+
+Run with Python 3.11+:
+
+```bash
 cd Cluster_UI
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe main.py
+python -m pip install -r requirements.txt
+python main.py
 ```
 
-Sonraki açılışlarda `Cluster_UI` klasöründe sadece:
+The UI supports demo mode without connecting hardware.
 
-```powershell
-.\.venv\Scripts\python.exe main.py
-```
+## Videos
 
-### macOS / Linux
+- [Video 1](https://youtu.be/6FpHpLWUcVM)
+- [Video 2](https://youtu.be/DHChB6jY_es)
 
-```sh
-cd Cluster_UI
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python main.py
-```
+## Next Steps
 
-Sonraki açılışlarda `Cluster_UI` klasöründe sadece:
+- ESP32 + K-Line communication
+- Read ECT, IAT, STFT and LTFT from ECU
+- Integrate the 5-inch display
+- Build a standalone digital cluster
 
-```sh
-sh start.sh
-```
-
-İlk kurulumda internet gerekir. Uygulama demo modunda açılır; Arduino veya araç bağlantısı gerekmez.
+**Status:** Work in progress.
