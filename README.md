@@ -5,7 +5,7 @@ Custom digital instrument cluster project using Arduino, C++ and Python/Qt.
 
 Reading signals directly from the original cluster harness.
 ###
-test folder means , i tested this files for that spesific input. they are working and ready to add as a feature.
+TESTS folder means , i tested this files for that spesific input. they are working and ready to add as a feature.
 
 ## Signals & Pins
 
