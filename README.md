@@ -8,6 +8,8 @@ fuel usage , xx mpg
 will read from obd2 port (hopefully).
 29 october.
 
+screen is arrived , having problems on soldering on protoboard->20november
+
 ## Çalıştırma
 
 1. Bilgisayarına **Python 3.11 veya üzerini** kur. Windows'ta kurarken **Add Python to PATH** seçeneğini işaretle.
