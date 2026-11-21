@@ -1,11 +1,9 @@
 
-# 2002 Acura RSX — Digital Cluster
+# 2002 Acura RSX BASE AUTO — Digital Cluster
 
-Custom digital instrument cluster project using Arduino, C++ and Python/Qt.
+Custom digital instrument cluster project using Arduino, C++, and Python/Qt.
 
-Reading signals directly from the original cluster harness.
-###
-TESTS folder means , i tested this files for that spesific input. they are working and ready to add as a feature.
+Reading signals directly from the original cluster wiring.
 
 ## Signals & Pins
 
@@ -18,7 +16,11 @@ TESTS folder means , i tested this files for that spesific input. they are worki
 | Right Turn Signal | B9 |
 | Cruise Control | A8 |
 
-Arduino reads the signals and sends data over USB serial port (115200 baud). You also can see wiring diagram for 2002 rsx in files. I added as pdf files.
+The `TESTS/` folder contains individual Arduino sketches for each signal. I've tested these inputs separately, and they're working. The next step is combining them into one system.
+
+Arduino reads the signals and sends data over USB serial (115200 baud).
+
+I've also included the 2002 RSX cluster wiring diagrams as PDF files in this repository.
 
 ## Dashboard UI
 
@@ -41,10 +43,15 @@ The UI supports demo mode without connecting hardware.
 
 ## Next Steps
 
+- Combine all tested signals into one system
 - ESP32 + K-Line communication
-- Read ECT, IAT, STFT and LTFT from ECU
+- Read ECT, IAT, STFT, and LTFT from the ECU
 - Integrate the 5-inch display
 - Build a standalone digital cluster
-- THEN HEAD UNIT ->>THEN ECU.
+- Future projects: Custom head unit → ECU
 
-**Status:** Work in progress: im having problems with soldering on protoboard. We are using voltage divider and each input brings 5 things , so breadbord becomes a hell. I need a protoboard for keep this project organized...but having problems on soldering. (20 nov)
+## Current Status — Nov 20, 2026
+
+Currently working on the hardware. I'm using voltage dividers to read the signals, but the breadboard is getting messy with all the wiring.
+
+I'm trying to move everything onto a protoboard, although soldering has been a bit challenging.
